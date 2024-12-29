@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&Eacute;lanSpectral</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            color: #fff; /* Make header title white */
+        }
+    
+
+        
+        section {
+            padding: 2em;
+        }
+        .expertise, .products, .contact {
+            background: #ecf0f1;
+            margin-bottom: 2em;
+            border-radius: 5px;
+            padding: 1em;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .photos {
+    display: flex;
+    justify-content: left;
+    gap: 20px; /* Space between images */
+    align-items: center;
+    flex-wrap: wrap; /* Wrap on smaller screens */
+}
+        .photos img {
+            max-width: 48%;
+            border-radius: 5px;
+        }
+        
+        .photos figure {
+    text-align: center;
+    margin: 0;
+}
+        
+        
+        .Team {
+    text-align: left;
+    margin: 20px;
+}
+
+        .custom-video {
+    width: auto; /* Set the desired width */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    border: 2px solid #ccc; /* Optional border for better appearance */
+    overflow: hidden; /* Ensure no content spills out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+    display: block; /* Ensure proper spacing */
+    margin: 0 auto; /* Center the video */
+}
+        
+.founders {
+    display: flex;
+    justify-content: left;
+    gap: 20px; /* Space between images */
+    align-items: center;
+    flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+.founders figure {
+    text-align: center;
+    margin: 0;
+}
+
+.founders img {
+    width: 200px; /* Smaller width */
+    height: 200px; /* Smaller height */
+    object-fit: cover;
+    border-radius: 10%; /* Circular images */
+    border: 2px solid #ccc;
+}
+
+.founders figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+}
+        
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>&Eacute;lanSpectral</h1>
+        <h1>Bienvenue</h1>
+    </header>
+
+    <section class="expertise">
+        <h2>Expertise</h2>
+        <ul>
+            <li>Dual Comb Spectroscopy</li>
+            <li>Optical Metrology</li>
+            <li>Signal Acquisition</li>
+            <li>Signal Processing</li>
+            <li>Real-time GPU-based Processing</li>
+        </ul>
+    </section>
+
+    <section class="products">
+        <h2>Products</h2>
+        
+                <p> From the UV to the Far-IR, we turn lasers into fully phase-corrected Dual Comb Spectrometers ! <p>
+        
+        <h3>Software - the PUG</h3>
+        
+        This is the only product on the market that flexibly allows using any combination of referencing signals (or none !) and performs real-time fast as well as self correction on your dual comb interferograms.
+        <p>    Explore the free version on <a href="https://github.com/MathWalsh/The_PUG_DCS_on_GPU" target="_blank"> GitHub</a>.</p>
+        <p>    Commercial version supports two channels, a real-time scope mode, more signal visualizations,a better interface, and more !</p>
+            <ul>
+        <li> Contact us for details</li>
+                </ul>
+            
+        
+        <div class="founders">
+    <figure>
+        <video class="custom-video" src="ressources/interface.mp4" autoplay loop muted playsinline>
+            <img src="ressources/interface.jpg" alt="Fallback image" style="width: 100%; height: auto;">
+        </video>
+        <figcaption>PUG interface</figcaption>
+    </figure>
+    <figure>
+        <video class="custom-video" src="ressources/scope.mp4" autoplay loop muted playsinline>
+            <img src="ressources/scope.jpg" alt="Fallback image" style="width: 100%; height: auto;">
+        </video>
+        <figcaption>Scope mode </figcaption>
+    </figure>
+</div>
+        
+        <h3>Fully integrated system</h3>
+        <p>    3U and 4U racknounted units customized to your application </p>
+    <div class="founders">
+        <figure>
+            <img src="ressources/3U.jpg" alt="3U rack mount system">
+            <figcaption>3U Rack-Mounted System</figcaption>
+        </figure>
+    </div>
+    </section>
+
+    
+
+<section class="Team">
+    <h2>Founders</h2>
+    <div class="founders">
+        <figure>
+            <img src="ressources/mwa.jpg" alt="Mathieu Walsh">
+            <figcaption>Mathieu Walsh</figcaption>
+        </figure>
+        <figure>
+            <img src="ressources/jge.jpg" alt="J&eacute;r&ocirc;me Genest">
+            <figcaption>J&eacute;r&ocirc;me Genest</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section class="Publications">
+    <h2>Publications</h2>
+    <h3>The PUG explained</h3>
+    <ul>
+        <li>Walsh et al. <a href="https://doi.org/10.1063/5.0222548" target="_blank"><em>Graphics card-based real-time processing for dual comb interferometry</em></a>, Review of Scientific Instruments 95, 103005 (2024).</li>
+    </ul>
+    <h3>Recent Publications using the PUG</h3>
+    <ul>
+        <li>Cossel et al. <em>Long open-path greenhouse gas observations in Salt Lake City</em>, AGU 2024 (2024).</li>
+        <li>Rhoades et al. <em>Summertime Open-Path Mid-Infrared Dual-Comb Spectroscopy in Salt Lake City, UT</em>, AGU 2024 (2024).</li>
+        <li>Walsh et al. <a href="https://doi.org/10.1364/OE.523623" target="_blank"><em>Pulse interaction induced systematic errors in dual comb spectroscopy</em></a>, Optics Express 31 (11), 19837-19853 (2024).</li>
+        <li>Genest et al. <a href="https://doi.org/10.1364/CLEO_AT.2024.AM4H.3" target="_blank"><em>Chasing systematic errors in dual comb spectroscopy</em></a>, CLEO 2024 (2024).</li>
+    </ul>
+</section>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:contact@elanspectral.com">elanspectral@gmail.com</a></p>
+        <p>Phone: 1-581-990-5396</p>
+    </section>
+
+    
+    
+    
+    <footer>
+        <p>&copy; 2024 &Eacute;lanSpectral. All rights reserved.</p>
+    </footer>
+</body>
+</html>
